@@ -1,0 +1,115 @@
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  font-family: sans-serif, Arial;
+  height: 100%;
+  font-size: 1em;
+}
+@media screen and (max-width: 500px) {
+  body{
+    font-size: .8em;
+  }
+}
+@media screen and (max-width: 300px) {
+  body{
+    font-size: .6em;
+  }
+}
+#lister{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #FFF;
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+  text-align: center;
+}
+#lister i{
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  padding: 0;
+  color: #AAA;
+  margin-top: 11px;
+}
+#lister:hover{
+  cursor: pointer;
+}
+.pays{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  z-index: 999;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px;
+}
+.pays.hidded{
+  display: none;
+}
+.pays::-webkit-scrollbar {
+  display: none;
+}
+.continent{
+  margin-bottom: 50px;
+}
+.continent ul{
+  list-style: none;
+}
+.continent ul li{
+  margin-bottom: 3px;
+}
+.continent ul li .li-content{
+  padding: 2px 4px;
+  display: inline-block;
+  background: #FFF;
+  border-radius: 0 7px 7px 7px;
+}
+.continent ul li .li-content:hover{
+  cursor: pointer;
+}
+h2{
+  font-size: 1.5em;
+}
+h2 .h2-content{
+  margin-bottom: 3px;
+  background: #333;
+  color:#FFF;
+  padding: 10px 15px;
+  border-radius: 10px 10px 10px 0;
+  display: inline-block;
+}
+.flagicon{
+  display: inline-block;
+  width: 20px;
+  height: 13px;
+  margin-right: 3px;
+}
+.flagicon img{
+  display: block;
+  height: 100%;
+  max-width: 100%;
+}
+.mental-separator{
+  height: 10px;
+}
+
+#map{
+  height: 100%;
+}
+/* Cacher le logo Google */
+div[style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"]{
+  display: none;
+}
+.gmnoprint{
+  display: none;
+}
