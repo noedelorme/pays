@@ -1,8 +1,8 @@
-//Pointer le logo Google
-//document.body.firstElementChild.firstElementChild.firstElementChild.childNodes[12].style.display = "none";
+// Pointer le logo Google
+// document.body.firstElementChild.firstElementChild.firstElementChild.childNodes[12].style.display = "none";
 
+// Initialisation de la map Google Maps
 let map;
-
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 32.82, lng: 7.90 },
@@ -12,32 +12,39 @@ function initMap() {
   });
 }
 
+// Gestion du bouton d'affichage
 document.getElementById("lister").addEventListener("click", function(e){
-  if(this.dataset.state == "alphab"){
-    this.dataset.state = "mental";
-    document.getElementById("pays-alphab").classList.add("hidded");
-    document.getElementById("pays-mental").classList.remove("hidded");
-    this.innerHTML = "<i class=\"fas fa-sort-amount-down\"></i>";
-  }else if(this.dataset.state == "mental"){
-    this.dataset.state = "none";
-    //document.getElementById("pays-alphab").classList.add("hidded");
-    document.getElementById("pays-mental").classList.add("hidded");
-    this.innerHTML = "<i class=\"fas fa-globe-americas\"></i>";
-  }else{
-    this.dataset.state = "alphab";
-    document.getElementById("pays-alphab").classList.remove("hidded");
-    //document.getElementById("pays-mental").classList.add("hidded");
-    this.innerHTML = "<i class=\"fas fa-sort-alpha-down\"></i>";
-  }
+  document.getElementById("pays-list").classList.toggle("hidded");
 });
 
-let lis = document.querySelectorAll('.continent ul .li-content');
-for(let i=0; i<lis.length; i++){
-  lis[i].addEventListener("click", function(e){
+// Lien vers les pays
+let paysBlock = document.querySelectorAll('.pays-block');
+for(let i=0; i<paysBlock.length; i++){
+  paysBlock[i].addEventListener("click", function(e){
     var request = {
-     query: this.innerHTML.split("</span>")[1],
-     fields: ['name', 'geometry'],
-   };
+      query: this.innerHTML.split(".png\"></span>")[1].split("</span>")[0],
+      fields: ['name', 'geometry'],
+    };
+
+   var service = new google.maps.places.PlacesService(map);
+
+   service.findPlaceFromQuery(request, function(results, status) {
+     if (status === google.maps.places.PlacesServiceStatus.OK) {
+       map.setCenter(results[0].geometry.location);
+       map.fitBounds(results[0].geometry.viewport);
+     }
+   });
+  });
+}
+
+// Lien vers les capitales
+let capitalesBlock = document.querySelectorAll('.capitale-block');
+for(let i=0; i<capitalesBlock.length; i++){
+  capitalesBlock[i].addEventListener("click", function(e){
+    var request = {
+      query: this.innerHTML.split("capitale\">")[1].split("</span>")[0],
+      fields: ['name', 'geometry'],
+    };
 
    var service = new google.maps.places.PlacesService(map);
 

@@ -42,7 +42,7 @@ html, body{
 #lister:hover{
   cursor: pointer;
 }
-.pays{
+#pays-list{
   position: fixed;
   top: 0;
   left: 0;
@@ -53,29 +53,11 @@ html, body{
   text-align: left;
   padding: 10px;
 }
-.pays.hidded{
+#pays-list.hidded{
   display: none;
 }
-.pays::-webkit-scrollbar {
+#pays-list::-webkit-scrollbar {
   display: none;
-}
-.continent{
-  margin-bottom: 50px;
-}
-.continent ul{
-  list-style: none;
-}
-.continent ul li{
-  margin-bottom: 3px;
-}
-.continent ul li .li-content{
-  padding: 2px 4px;
-  display: inline-block;
-  background: #FFF;
-  border-radius: 0 7px 7px 7px;
-}
-.continent ul li .li-content:hover{
-  cursor: pointer;
 }
 h2{
   font-size: 1.5em;
@@ -87,6 +69,52 @@ h2 .h2-content{
   padding: 10px 15px;
   border-radius: 10px 10px 10px 0;
   display: inline-block;
+}
+.continent{
+  margin-bottom: 50px;
+}
+.continent ul{
+  list-style: none;
+}
+.continent ul li{
+  margin-bottom: 3px;
+}
+.continent ul li .pays-block{
+  display: block;
+}
+.continent ul li .pays-block .pays{
+  padding: 2px 4px;
+  display: inline-block;
+  background: #FFF;
+  font-size: 16px;
+  border-radius: 0 7px 7px 0;
+}
+.continent ul li .pays-block .pays:hover{
+  cursor: pointer;
+}
+.continent ul li .capitale-block{
+  display: block;
+}
+.continent ul li .capitale-block .capitale{
+  padding: 2px 4px;
+  display: inline-block;
+  background: #FFF;
+  color:#666;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: normal;
+  border-radius: 0 7px 7px 7px;
+}
+.continent ul li .capitale-block .capitale:hover{
+  cursor: pointer;
+}
+@media screen and (max-width: 640px) {
+  .continent ul li .pays-block .pays{
+    font-size: 13px;
+  }
+  .continent ul li .capitale-block .capitale{
+    font-size: 11px;
+  }
 }
 .flagicon{
   display: inline-block;
@@ -100,7 +128,7 @@ h2 .h2-content{
   max-width: 100%;
 }
 .mental-separator{
-  height: 10px;
+  height: 20px;
 }
 
 #map{
@@ -112,4 +140,11 @@ div[style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: abso
 }
 .gmnoprint{
   display: none;
+}
+
+
+/* Ajout des capitales */
+.capital{
+  display: inline-block;
+  background: #FFF;
 }

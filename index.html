@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="./style.css">
-	<link rel="icon" type="image/png" href="favicon.png" />
+	<link rel="icon" type="image/png" href="favicon.png"/>
 
 	<title>Pays</title>
 </head>
@@ -13,489 +13,851 @@
 <body>
 
 	<div id="map"></div>
-	<div id="lister" data-state="alphab"><i class="fas fa-sort-alpha-down"></i></div>
+	<div id="lister"><i class="fas fa-sort-amount-down"></i></div>
 
-	<div id="pays-alphab" class="pays" dir="rtl">
+	<div id="pays-list"dir="rtl">
 		<div class="continent" dir="ltr">
 			<h2><span class="h2-content">Afrique (54)</span></h2>
 			<ul>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_South_Africa.svg.png" /></span>Afrique du Sud</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Algeria.svg.png" /></span>Algérie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Angola.svg.png" /></span>Angola</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Benin.svg.png" /></span>Bénin</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Botswana.svg.png" /></span>Botswana</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Burkina_Faso.svg.png" /></span>Burkina Faso</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Burundi.svg.png" /></span>Burundi</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Cameroon.svg.png" /></span>Cameroun</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Cape_Verde.svg.png" /></span>Cap-Vert</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Central_African_Republic.svg.png" /></span>République centrafricaine</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Comoros.svg.png" /></span>Comores</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Republic_of_the_Congo.svg.png" /></span>République du Congo</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Democratic_Republic_of_the_Congo.svg.png" /></span>Rép. dém. du Congo</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Cote_dIvoire.svg.png" /></span>Côte d'Ivoire</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Djibouti.svg.png" /></span>Djibouti</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Egypt.svg.png" /></span>Égypte</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Eritrea.svg.png" /></span>Érythrée</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Ethiopia.svg.png" /></span>Éthiopie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Eswatini.svg.png" /></span>Eswatini</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Gabon.svg.png" /></span>Gabon</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_The_Gambia.svg.png" /></span>Gambie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Ghana.svg.png" /></span>Ghana</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Guinea.svg.png" /></span>Guinée</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Guinea-Bissau.svg.png" /></span>Guinée-Bissau</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Equatorial_Guinea.svg.png" /></span>Guinée équatoriale</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Kenya.svg.png" /></span>Kenya</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Lesotho.svg.png" /></span>Lesotho</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Liberia.svg.png" /></span>Liberia</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Libya.svg.png" /></span>Libye</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Madagascar.svg.png" /></span>Madagascar</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Malawi.svg.png" /></span>Malawi</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Mali.svg.png" /></span>Mali</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Morocco.svg.png" /></span>Maroc</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Mauritius.svg.png" /></span>Maurice</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Mauritania.svg.png" /></span>Mauritanie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Mozambique.svg.png" /></span>Mozambique</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Namibia.svg.png" /></span>Namibie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Niger.svg.png" /></span>Niger</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Nigeria.svg.png" /></span>Nigeria</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Uganda.svg.png" /></span>Ouganda</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Rwanda.svg.png" /></span>Rwanda</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Sao_Tome_and_Principe.svg.png" /></span>Sao Tomé-et-Principe</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Senegal.svg.png" /></span>Sénégal</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Seychelles.svg.png" /></span>Seychelles</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Sierra_Leone.svg.png" /></span>Sierra Leone</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Somalia.svg.png" /></span>Somalie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Sudan.svg.png" /></span>Soudan</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_South_Sudan.svg.png" /></span>Soudan du Sud</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Tanzania.svg.png" /></span>Tanzanie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Chad.svg.png" /></span>Tchad</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Togo.svg.png" /></span>Togo</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Tunisia.svg.png" /></span>Tunisie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Zambia.svg.png" /></span>Zambie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Zimbabwe.svg.png" /></span>Zimbabwe</span></li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Morocco.svg.png"/></span>Maroc</span></span>
+					<span class="capitale-block"><span class="capitale">Rabat</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Algeria.svg.png"/></span>Algérie</span></span>
+					<span class="capitale-block"><span class="capitale">Alger</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Tunisia.svg.png"/></span>Tunisie</span></span>
+					<span class="capitale-block"><span class="capitale">Tunis</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Libya.svg.png"/></span>Libye</span></span>
+					<span class="capitale-block"><span class="capitale">Tripoli</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Egypt.svg.png"/></span>Égypte</span></span>
+					<span class="capitale-block"><span class="capitale">Le Caire</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Mauritania.svg.png"/></span>Mauritanie</span></span>
+					<span class="capitale-block"><span class="capitale">Nouakchott</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Mali.svg.png"/></span>Mali</span></span>
+					<span class="capitale-block"><span class="capitale">Bamako</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Niger.svg.png"/></span>Niger</span></span>
+					<span class="capitale-block"><span class="capitale">Niamey</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Chad.svg.png"/></span>Tchad</span></span>
+					<span class="capitale-block"><span class="capitale">N'Djamena</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Sudan.svg.png"/></span>Soudan</span></span>
+					<span class="capitale-block"><span class="capitale">Khartoum</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Eritrea.svg.png"/></span>Érythrée</span></span>
+					<span class="capitale-block"><span class="capitale">Asmara</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Senegal.svg.png"/></span>Sénégal</span></span>
+					<span class="capitale-block"><span class="capitale">Dakar</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_The_Gambia.svg.png"/></span>Gambie</span></span>
+					<span class="capitale-block"><span class="capitale">Banjul</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Guinea-Bissau.svg.png"/></span>Guinée-Bissau</span></span>
+					<span class="capitale-block"><span class="capitale">Bissau</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Guinea.svg.png"/></span>Guinée</span></span>
+					<span class="capitale-block"><span class="capitale">onakry</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Sierra_Leone.svg.png"/></span>Sierra Leone</span></span>
+					<span class="capitale-block"><span class="capitale">Freetown</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Liberia.svg.png"/></span>Liberia</span></span>
+					<span class="capitale-block"><span class="capitale">Monrovia</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Cote_dIvoire.svg.png"/></span>Côte d'Ivoire</span></span>
+					<span class="capitale-block"><span class="capitale">Yamoussoukro</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Burkina_Faso.svg.png"/></span>Burkina Faso</span></span>
+					<span class="capitale-block"><span class="capitale">Ouagadougou</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Ghana.svg.png"/></span>Ghana</span></span>
+					<span class="capitale-block"><span class="capitale">Accra</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Togo.svg.png"/></span>Togo</span></span>
+					<span class="capitale-block"><span class="capitale">Lomé</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Benin.svg.png"/></span>Bénin</span></span>
+					<span class="capitale-block"><span class="capitale">Porto-Novo</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Nigeria.svg.png"/></span>Nigeria</span></span>
+					<span class="capitale-block"><span class="capitale">Abuja</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Cameroon.svg.png"/></span>Cameroun</span></span>
+					<span class="capitale-block"><span class="capitale">Yaoundé</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Central_African_Republic.svg.png"/></span>République centrafricaine</span></span>
+					<span class="capitale-block"><span class="capitale">Bangui</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_South_Sudan.svg.png"/></span>Soudan du Sud</span></span>
+					<span class="capitale-block"><span class="capitale">Djouba</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Ethiopia.svg.png"/></span>Éthiopie</span></span>
+					<span class="capitale-block"><span class="capitale">Addis-Abeba</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Djibouti.svg.png"/></span>Djibouti</span></span>
+					<span class="capitale-block"><span class="capitale">Ismaïl Omar Guelleh</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Somalia.svg.png"/></span>Somalie</span></span>
+					<span class="capitale-block"><span class="capitale">Mogadiscio</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Equatorial_Guinea.svg.png"/></span>Guinée équatoriale</span></span>
+					<span class="capitale-block"><span class="capitale">Malabo</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Gabon.svg.png"/></span>Gabon</span></span>
+					<span class="capitale-block"><span class="capitale">Libreville</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Republic_of_the_Congo.svg.png"/></span>République du Congo</span></span>
+					<span class="capitale-block"><span class="capitale">Brazzaville</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Democratic_Republic_of_the_Congo.svg.png"/></span>Rép. dém. du Congo</span></span>
+					<span class="capitale-block"><span class="capitale">Kinshasa</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Uganda.svg.png"/></span>Ouganda</span></span>
+					<span class="capitale-block"><span class="capitale">Kampala</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Kenya.svg.png"/></span>Kenya</span></span>
+					<span class="capitale-block"><span class="capitale">Nairobi</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Rwanda.svg.png"/></span>Rwanda</span></span>
+					<span class="capitale-block"><span class="capitale">Kigali</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Burundi.svg.png"/></span>Burundi</span></span>
+					<span class="capitale-block"><span class="capitale">Gitega</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Tanzania.svg.png"/></span>Tanzanie</span></span>
+					<span class="capitale-block"><span class="capitale">Dodoma</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Angola.svg.png"/></span>Angola</span></span>
+					<span class="capitale-block"><span class="capitale">Luanda</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Zambia.svg.png"/></span>Zambie</span></span>
+					<span class="capitale-block"><span class="capitale">Lusaka</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Malawi.svg.png"/></span>Malawi</span></span>
+					<span class="capitale-block"><span class="capitale">Lilongwe</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Mozambique.svg.png"/></span>Mozambique</span></span>
+					<span class="capitale-block"><span class="capitale">Maputo</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Namibia.svg.png"/></span>Namibie</span></span>
+					<span class="capitale-block"><span class="capitale">Windhoek</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Botswana.svg.png"/></span>Botswana</span></span>
+					<span class="capitale-block"><span class="capitale">Gaborone</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Zimbabwe.svg.png"/></span>Zimbabwe</span></span>
+					<span class="capitale-block"><span class="capitale">Harare</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_South_Africa.svg.png"/></span>Afrique du Sud</span></span>
+					<span class="capitale-block"><span class="capitale">Le Cap, Pretoria, Bloemfontein</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Lesotho.svg.png"/></span>Lesotho</span></span>
+					<span class="capitale-block"><span class="capitale">Maseru</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Eswatini.svg.png"/></span>Eswatini</span></span>
+					<span class="capitale-block"><span class="capitale">Mbabane, Lobamba</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Madagascar.svg.png"/></span>Madagascar</span></span>
+					<span class="capitale-block"><span class="capitale">Tananarive</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Comoros.svg.png"/></span>Comores</span></span>
+					<span class="capitale-block"><span class="capitale">Moroni</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Seychelles.svg.png"/></span>Seychelles</span></span>
+					<span class="capitale-block"><span class="capitale">Victoria</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Mauritius.svg.png"/></span>Maurice</span></span>
+					<span class="capitale-block"><span class="capitale">Port Louis</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Cape_Verde.svg.png"/></span>Cap-Vert</span></span>
+					<span class="capitale-block"><span class="capitale">Praia</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Sao_Tome_and_Principe.svg.png"/></span>Sao Tomé-et-Principe</span></span>
+					<span class="capitale-block"><span class="capitale">São Tomé</span></span>
+				</li>
 			</ul>
 		</div>
 
 		<div class="continent" dir="ltr">
 			<h2><span class="h2-content">Amérique (35)</span></h2>
 			<ul>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Antigua_and_Barbuda.svg.png" /></span>Antigua-et-Barbuda</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Argentina.svg.png" /></span>Argentine</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Bahamas.svg.png" /></span>Bahamas</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Barbados.svg.png" /></span>Barbade</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Belize.svg.png" /></span>Belize</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Bolivia.svg.png" /></span>Bolivie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Brazil.svg.png" /></span>Brésil</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Canada.svg.png" /></span>Canada</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Chile.svg.png" /></span>Chili</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Colombia.svg.png" /></span>Colombie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Costa_Rica.svg.png" /></span>Costa Rica</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Cuba.svg.png" /></span>Cuba</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Dominican_Republic.svg.png" /></span>République dominicaine</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Dominica.svg.png" /></span>Dominique</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_El_Salvador.svg.png" /></span>El Salvador</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Ecuador.svg.png" /></span>Équateur</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_United_States.svg.png" /></span>États-Unis</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Grenada.svg.png" /></span>Grenade</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Guatemala.svg.png" /></span>Guatemala</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Guyana.svg.png" /></span>Guyana</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Haiti.svg.png" /></span>Haïti</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Honduras.svg.png" /></span>Honduras</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Jamaica.svg.png" /></span>Jamaïque</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Mexico.svg.png" /></span>Mexique</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Nicaragua.svg.png" /></span>Nicaragua</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Panama.svg.png" /></span>Panama</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Paraguay.svg.png" /></span>Paraguay</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Peru.svg.png" /></span>Pérou</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Saint_Kitts_and_Nevis.svg.png" /></span>Saint-Kitts-et-Nevis</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Saint_Lucia.svg.png" /></span>Sainte-Lucie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Saint_Vincent_and_the_Grenadines.svg.png" /></span>St-Vincent-et-les-Grenadines</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Suriname.svg.png" /></span>Suriname</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Trinidad_and_Tobago.svg.png" /></span>Trinité-et-Tobago</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Uruguay.svg.png" /></span>Uruguay</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Venezuela.svg.png" /></span>Venezuela</span></li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Canada.svg.png"/></span>Canada</span></span>
+					<span class="capitale-block"><span class="capitale">Ottawa</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_United_States.svg.png"/></span>États-Unis</span></span>
+					<span class="capitale-block"><span class="capitale">Washington</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Mexico.svg.png"/></span>Mexique</span></span>
+					<span class="capitale-block"><span class="capitale">Mexico</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Belize.svg.png"/></span>Belize</span></span>
+					<span class="capitale-block"><span class="capitale">Belmopan</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Guatemala.svg.png"/></span>Guatemala</span></span>
+					<span class="capitale-block"><span class="capitale">Guatemala</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_El_Salvador.svg.png"/></span>El Salvador</span></span>
+					<span class="capitale-block"><span class="capitale">San Salvador</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Honduras.svg.png"/></span>Honduras</span></span>
+					<span class="capitale-block"><span class="capitale">Tegucigalpa</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Nicaragua.svg.png"/></span>Nicaragua</span></span>
+					<span class="capitale-block"><span class="capitale">Managua</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Costa_Rica.svg.png"/></span>Costa Rica</span></span>
+					<span class="capitale-block"><span class="capitale">San José</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Panama.svg.png"/></span>Panama</span></span>
+					<span class="capitale-block"><span class="capitale">Panama</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Ecuador.svg.png"/></span>Équateur</span></span>
+					<span class="capitale-block"><span class="capitale">Quito</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Colombia.svg.png"/></span>Colombie</span></span>
+					<span class="capitale-block"><span class="capitale">Bogota</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Venezuela.svg.png"/></span>Venezuela</span></span>
+					<span class="capitale-block"><span class="capitale">Caracas</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Guyana.svg.png"/></span>Guyana</span></span>
+					<span class="capitale-block"><span class="capitale">Georgetown</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Suriname.svg.png"/></span>Suriname</span></span>
+					<span class="capitale-block"><span class="capitale">Paramaribo</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Peru.svg.png"/></span>Pérou</span></span>
+					<span class="capitale-block"><span class="capitale">Lima</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Bolivia.svg.png"/></span>Bolivie</span></span>
+					<span class="capitale-block"><span class="capitale">La Paz, Sucre</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Brazil.svg.png"/></span>Brésil</span></span>
+					<span class="capitale-block"><span class="capitale">Brasília</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Chile.svg.png"/></span>Chili</span></span>
+					<span class="capitale-block"><span class="capitale">Santiago</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Argentina.svg.png"/></span>Argentine</span></span>
+					<span class="capitale-block"><span class="capitale">Buenos Aires</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Paraguay.svg.png"/></span>Paraguay</span></span>
+					<span class="capitale-block"><span class="capitale">Asuncion</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Uruguay.svg.png"/></span>Uruguay</span></span>
+					<span class="capitale-block"><span class="capitale">Montevideo</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Bahamas.svg.png"/></span>Bahamas</span></span>
+					<span class="capitale-block"><span class="capitale">Nassau</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Cuba.svg.png"/></span>Cuba</span></span>
+					<span class="capitale-block"><span class="capitale">La Havane</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Jamaica.svg.png"/></span>Jamaïque</span></span>
+					<span class="capitale-block"><span class="capitale">Kingston</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Haiti.svg.png"/></span>Haïti</span></span>
+					<span class="capitale-block"><span class="capitale">Port-au-Prince</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Dominican_Republic.svg.png"/></span>République dominicaine</span></span>
+					<span class="capitale-block"><span class="capitale">Saint-Domingue</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Saint_Kitts_and_Nevis.svg.png"/></span>Saint-Kitts-et-Nevis</span></span>
+					<span class="capitale-block"><span class="capitale">asseterre, Charlestown</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Antigua_and_Barbuda.svg.png"/></span>Antigua-et-Barbuda</span></span>
+					<span class="capitale-block"><span class="capitale">Saint John’s</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Dominica.svg.png"/></span>Dominique</span></span>
+					<span class="capitale-block"><span class="capitale">Roseau</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Saint_Lucia.svg.png"/></span>Sainte-Lucie</span></span>
+					<span class="capitale-block"><span class="capitale">Castries</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Saint_Vincent_and_the_Grenadines.svg.png"/></span>St-Vincent-et-les-Grenadines</span></span>
+					<span class="capitale-block"><span class="capitale">Kingstown</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Barbados.svg.png"/></span>Barbade</span></span>
+					<span class="capitale-block"><span class="capitale">Bridgetown</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Grenada.svg.png"/></span>Grenade</span></span>
+					<span class="capitale-block"><span class="capitale">Saint-Georges</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Trinidad_and_Tobago.svg.png"/></span>Trinité-et-Tobago</span></span>
+					<span class="capitale-block"><span class="capitale">Port-d'Espagne</span></span>
+				</li>
 			</ul>
 		</div>
 
 		<div class="continent" dir="ltr">
 			<h2><span class="h2-content">Asie (47)</span></h2>
 			<ul>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Afghanistan.svg.png" /></span>Afghanistan</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Saudi_Arabia.svg.png" /></span>Arabie saoudite</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Armenia.svg.png" /></span>Arménie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Azerbaijan.svg.png" /></span>Azerbaïdjan</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Bahrain.svg.png" /></span>Bahreïn</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Bangladesh.svg.png" /></span>Bangladesh</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Bhutan.svg.png" /></span>Bhoutan</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Myanmar.svg.png" /></span>Birmanie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Brunei.svg.png" /></span>Brunei</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Cambodia.svg.png" /></span>Cambodge</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_People%27s_Republic_of_China.svg.png" /></span>Chine</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_North_Korea.svg.png" /></span>Corée du Nord</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_South_Korea.svg.png" /></span>Corée du Sud</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_United_Arab_Emirates.svg.png" /></span>Émirats arabes unis</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Georgia.svg.png" /></span>Géorgie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_India.svg.png" /></span>Inde</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Indonesia.svg.png" /></span>Indonésie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Iraq.svg.png" /></span>Irak</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Iran.svg.png" /></span>Iran</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Israel.svg.png" /></span>Israël</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Japan.svg.png" /></span>Japon</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Jordan.svg.png" /></span>Jordanie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Kazakhstan.svg.png" /></span>Kazakhstan</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Kyrgyzstan.svg.png" /></span>Kirghizistan</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Kuwait.svg.png" /></span>Koweït</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Laos.svg.png" /></span>Laos</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Lebanon.svg.png" /></span>Liban</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Malaysia.svg.png" /></span>Malaisie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Maldives.svg.png" /></span>Maldives</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Mongolia.svg.png" /></span>Mongolie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/15px-Flag_of_Nepal.svg.png" class="noviewer" /></span>Népal</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Oman.svg.png" /></span>Oman</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Uzbekistan.svg.png" /></span>Ouzbékistan</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Pakistan.svg.png" /></span>Pakistan</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Palestine.svg.png" /></span>Palestine</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Philippines.svg.png" /></span>Philippines</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Qatar.svg.png" /></span>Qatar</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Singapore.svg.png" /></span>Singapour</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Sri_Lanka.svg.png" /></span>Sri Lanka</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Syria.svg.png" /></span>Syrie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Tajikistan.svg.png" /></span>Tadjikistan</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Thailand.svg.png" /></span>Thaïlande</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_East_Timor.svg.png" /></span>Timor-Leste</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Turkmenistan.svg.png" /></span>Turkménistan</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Turkey.svg.png" /></span>Turquie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Vietnam.svg.png" /></span>Viêt Nam</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Yemen.svg.png" /></span>Yémen</span></li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Georgia.svg.png"/></span>Géorgie</span></span>
+					<span class="capitale-block"><span class="capitale">Tbilissi</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Armenia.svg.png"/></span>Arménie</span></span>
+					<span class="capitale-block"><span class="capitale">Erevan</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Turkey.svg.png"/></span>Turquie</span></span>
+					<span class="capitale-block"><span class="capitale">Ankara</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Syria.svg.png"/></span>Syrie</span></span>
+					<span class="capitale-block"><span class="capitale">Damas</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Lebanon.svg.png"/></span>Liban</span></span>
+					<span class="capitale-block"><span class="capitale">Beyrouth</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Israel.svg.png"/></span>Israël</span></span>
+					<span class="capitale-block"><span class="capitale">Jérusalem</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Palestine.svg.png"/></span>Palestine</span></span>
+					<span class="capitale-block"><span class="capitale">Ramallah, Jérusalem-Est</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Jordan.svg.png"/></span>Jordanie</span></span>
+					<span class="capitale-block"><span class="capitale">Amman</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Iraq.svg.png"/></span>Irak</span></span>
+					<span class="capitale-block"><span class="capitale">Bagdad</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Saudi_Arabia.svg.png"/></span>Arabie saoudite</span></span>
+					<span class="capitale-block"><span class="capitale">Riyad</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Kuwait.svg.png"/></span>Koweït</span></span>
+					<span class="capitale-block"><span class="capitale">Koweït</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Bahrain.svg.png"/></span>Bahreïn</span></span>
+					<span class="capitale-block"><span class="capitale">Manama</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Qatar.svg.png"/></span>Qatar</span></span>
+					<span class="capitale-block"><span class="capitale">Doha</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_United_Arab_Emirates.svg.png"/></span>Émirats arabes unis</span></span>
+					<span class="capitale-block"><span class="capitale">Abou Dabi</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Oman.svg.png"/></span>Oman</span></span>
+					<span class="capitale-block"><span class="capitale">Mascate</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Yemen.svg.png"/></span>Yémen</span></span>
+					<span class="capitale-block"><span class="capitale">Sanaa</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Azerbaijan.svg.png"/></span>Azerbaïdjan</span></span>
+					<span class="capitale-block"><span class="capitale">Bakou</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Iran.svg.png"/></span>Iran</span></span>
+					<span class="capitale-block"><span class="capitale">Téhéran</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Turkmenistan.svg.png"/></span>Turkménistan</span></span>
+					<span class="capitale-block"><span class="capitale">Achgabat</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Uzbekistan.svg.png"/></span>Ouzbékistan</span></span>
+					<span class="capitale-block"><span class="capitale">achkent</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Kazakhstan.svg.png"/></span>Kazakhstan</span></span>
+					<span class="capitale-block"><span class="capitale">Noursoultan</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Kyrgyzstan.svg.png"/></span>Kirghizistan</span></span>
+					<span class="capitale-block"><span class="capitale">Bichkek</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Tajikistan.svg.png"/></span>Tadjikistan</span></span>
+					<span class="capitale-block"><span class="capitale">Douchanbé</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Afghanistan.svg.png"/></span>Afghanistan</span></span>
+					<span class="capitale-block"><span class="capitale">Kaboul</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Pakistan.svg.png"/></span>Pakistan</span></span>
+					<span class="capitale-block"><span class="capitale">Islamabad</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Maldives.svg.png"/></span>Maldives</span></span>
+					<span class="capitale-block"><span class="capitale">Malé</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Sri_Lanka.svg.png"/></span>Sri Lanka</span></span>
+					<span class="capitale-block"><span class="capitale">Sri Jayawardenapura Kotte</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_India.svg.png"/></span>Inde</span></span>
+					<span class="capitale-block"><span class="capitale">New Delhi</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_People%27s_Republic_of_China.svg.png"/></span>Chine</span></span>
+					<span class="capitale-block"><span class="capitale">Pékin</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Mongolia.svg.png"/></span>Mongolie</span></span>
+					<span class="capitale-block"><span class="capitale">Oulan-Bator</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_North_Korea.svg.png"/></span>Corée du Nord</span></span>
+					<span class="capitale-block"><span class="capitale">Pyongyang</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_South_Korea.svg.png"/></span>Corée du Sud</span></span>
+					<span class="capitale-block"><span class="capitale">Séoul</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Japan.svg.png"/></span>Japon</span></span>
+					<span class="capitale-block"><span class="capitale">okyo</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/15px-Flag_of_Nepal.svg.png"/></span>Népal</span></span>
+					<span class="capitale-block"><span class="capitale">Katmandou</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Bhutan.svg.png"/></span>Bhoutan</span></span>
+					<span class="capitale-block"><span class="capitale">Thimphou</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Bangladesh.svg.png"/></span>Bangladesh</span></span>
+					<span class="capitale-block"><span class="capitale">Dacca</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Myanmar.svg.png"/></span>Myanmar</span></span>
+					<span class="capitale-block"><span class="capitale">Naypyidaw</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Thailand.svg.png"/></span>Thaïlande</span></span>
+					<span class="capitale-block"><span class="capitale">Bangkok</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Laos.svg.png"/></span>Laos</span></span>
+					<span class="capitale-block"><span class="capitale">Vientiane</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Vietnam.svg.png"/></span>Viêt Nam</span></span>
+					<span class="capitale-block"><span class="capitale">Hanoï</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Cambodia.svg.png"/></span>Cambodge</span></span>
+					<span class="capitale-block"><span class="capitale">Phnom Penh</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Malaysia.svg.png"/></span>Malaisie</span></span>
+					<span class="capitale-block"><span class="capitale">Kuala Lumpur</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Singapore.svg.png"/></span>Singapour</span></span>
+					<span class="capitale-block"><span class="capitale">Singapour</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Brunei.svg.png"/></span>Brunei</span></span>
+					<span class="capitale-block"><span class="capitale">Bandar Seri Begawan</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Philippines.svg.png"/></span>Philippines</span></span>
+					<span class="capitale-block"><span class="capitale">Manille</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Indonesia.svg.png"/></span>Indonésie</span></span>
+					<span class="capitale-block"><span class="capitale">Jakarta</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_East_Timor.svg.png"/></span>Timor-Leste</span></span>
+					<span class="capitale-block"><span class="capitale">Díli</span></span>
+				</li>
 			</ul>
 		</div>
 
 		<div class="continent" dir="ltr">
 			<h2><span class="h2-content">Europe(45)</span></h2>
 			<ul>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Albania.svg.png" /></span>Albanie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Germany.svg.png" /></span>Allemagne</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Andorra.svg.png" /></span>Andorre</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Austria.svg.png" /></span>Autriche</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Belgium_(civil).svg.png" /></span>Belgique</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Belarus.svg.png" /></span>Biélorussie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Bosnia_and_Herzegovina.svg.png" /></span>Bosnie-Herzégovine</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Bulgaria.svg.png" /></span>Bulgarie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Cyprus.svg.png" /></span>Chypre</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Croatia.svg.png" /></span>Croatie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Denmark.svg.png" /></span>Danemark</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Spain.svg.png" /></span>Espagne</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Estonia.svg.png" /></span>Estonie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Finland.svg.png" /></span>Finlande</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_France.svg.png" /></span>France</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Greece.svg.png" /></span>Grèce</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Hungary.svg.png" /></span>Hongrie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Ireland.svg.png" /></span>Irlande</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Iceland.svg.png" /></span>Islande</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Italy.svg.png" /></span>Italie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Latvia.svg.png" /></span>Lettonie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Liechtenstein.svg.png" /></span>Liechtenstein</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Lithuania.svg.png" /></span>Lituanie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Luxembourg.svg.png" /></span>Luxembourg</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_North_Macedonia.svg.png" /></span>Macédoine du Nord</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Malta.svg.png" /></span>Malte</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Moldova.svg.png" /></span>Moldavie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Monaco.svg.png" /></span>Monaco</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Montenegro.svg.png" /></span>Monténégro</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Norway.svg.png" /></span>Norvège</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Netherlands.svg.png" /></span>Pays-Bas</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Poland.svg.png" /></span>Pologne</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Portugal.svg.png" /></span>Portugal</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Czech_Republic.svg.png" /></span>République tchèque</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Romania.svg.png" /></span>Roumanie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_United_Kingdom.svg.png" /></span>Royaume-Uni</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Russia.svg.png" /></span>Russie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_San_Marino.svg.png" /></span>Saint-Marin</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Serbia.svg.png" /></span>Serbie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Slovakia.svg.png" /></span>Slovaquie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Slovenia.svg.png" /></span>Slovénie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Sweden.svg.png" /></span>Suède</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/15px-Flag_of_Switzerland.svg.png" /></span>Suisse</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Ukraine.svg.png" /></span>Ukraine</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/18px-Flag_of_the_Vatican_City.svg.png" /></span>Vatican</span></li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Iceland.svg.png"/></span>Islande</span></span>
+					<span class="capitale-block"><span class="capitale">Reykjavik</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Ireland.svg.png"/></span>Irlande</span></span>
+					<span class="capitale-block"><span class="capitale">Dublin</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_United_Kingdom.svg.png"/></span>Royaume-Uni</span></span>
+					<span class="capitale-block"><span class="capitale">Londres</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Norway.svg.png"/></span>Norvège</span></span>
+					<span class="capitale-block"><span class="capitale">Oslo</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Sweden.svg.png"/></span>Suède</span></span>
+					<span class="capitale-block"><span class="capitale">Stockholm</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Finland.svg.png"/></span>Finlande</span></span>
+					<span class="capitale-block"><span class="capitale">Helsinki</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Russia.svg.png"/></span>Russie</span></span>
+					<span class="capitale-block"><span class="capitale">Moscou</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Netherlands.svg.png"/></span>Pays-Bas</span></span>
+					<span class="capitale-block"><span class="capitale">Amsterdam</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Belgium_(civil).svg.png"/></span>Belgique</span></span>
+					<span class="capitale-block"><span class="capitale">Bruxelles</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Luxembourg.svg.png"/></span>Luxembourg</span></span>
+					<span class="capitale-block"><span class="capitale">Luxembourg</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_France.svg.png"/></span>France</span></span>
+					<span class="capitale-block"><span class="capitale">Paris</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Monaco.svg.png"/></span>Monaco</span></span>
+					<span class="capitale-block"><span class="capitale">Monaco</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Andorra.svg.png"/></span>Andorre</span></span>
+					<span class="capitale-block"><span class="capitale">Andorre-la-Vieille</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Spain.svg.png"/></span>Espagne</span></span>
+					<span class="capitale-block"><span class="capitale">Madrid</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Portugal.svg.png"/></span>Portugal</span></span>
+					<span class="capitale-block"><span class="capitale">Lisbonne</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Denmark.svg.png"/></span>Danemark</span></span>
+					<span class="capitale-block"><span class="capitale">Copenhague</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Germany.svg.png"/></span>Allemagne</span></span>
+					<span class="capitale-block"><span class="capitale">Berlin</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/15px-Flag_of_Switzerland.svg.png"/></span>Suisse</span></span>
+					<span class="capitale-block"><span class="capitale">Berne</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Liechtenstein.svg.png"/></span>Liechtenstein</span></span>
+					<span class="capitale-block"><span class="capitale">Vaduz</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Italy.svg.png"/></span>Italie</span></span>
+					<span class="capitale-block"><span class="capitale">Rome</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_San_Marino.svg.png"/></span>Saint-Marin</span></span>
+					<span class="capitale-block"><span class="capitale">Saint-Marin</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/18px-Flag_of_the_Vatican_City.svg.png"/></span>Vatican</span></span>
+					<span class="capitale-block"><span class="capitale">Vatican</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Malta.svg.png"/></span>Malte</span></span>
+					<span class="capitale-block"><span class="capitale">La Valette</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Czech_Republic.svg.png"/></span>Tchéquie</span></span>
+					<span class="capitale-block"><span class="capitale">Prague</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Austria.svg.png"/></span>Autriche</span></span>
+					<span class="capitale-block"><span class="capitale">Vienne</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Slovenia.svg.png"/></span>Slovénie</span></span>
+					<span class="capitale-block"><span class="capitale">Ljubljana</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Croatia.svg.png"/></span>Croatie</span></span>
+					<span class="capitale-block"><span class="capitale">Zagreb</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Bosnia_and_Herzegovina.svg.png"/></span>Bosnie-Herzégovine</span></span>
+					<span class="capitale-block"><span class="capitale">Sarajevo</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Montenegro.svg.png"/></span>Monténégro</span></span>
+					<span class="capitale-block"><span class="capitale">Podgorica</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Albania.svg.png"/></span>Albanie</span></span>
+					<span class="capitale-block"><span class="capitale">Tirana</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Greece.svg.png"/></span>Grèce</span></span>
+					<span class="capitale-block"><span class="capitale">Athènes</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Poland.svg.png"/></span>Pologne</span></span>
+					<span class="capitale-block"><span class="capitale">Varsovie</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Slovakia.svg.png"/></span>Slovaquie</span></span>
+					<span class="capitale-block"><span class="capitale">Bratislava</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Hungary.svg.png"/></span>Hongrie</span></span>
+					<span class="capitale-block"><span class="capitale">Budapest</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Serbia.svg.png"/></span>Serbie</span></span>
+					<span class="capitale-block"><span class="capitale">Belgrade</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_North_Macedonia.svg.png"/></span>Macédoine du Nord</span></span>
+					<span class="capitale-block"><span class="capitale">Skopje</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Estonia.svg.png"/></span>Estonie</span></span>
+					<span class="capitale-block"><span class="capitale">Tallinn</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Latvia.svg.png"/></span>Lettonie</span></span>
+					<span class="capitale-block"><span class="capitale">Riga</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Lithuania.svg.png"/></span>Lituanie</span></span>
+					<span class="capitale-block"><span class="capitale">Vilnius</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Belarus.svg.png"/></span>Biélorussie</span></span>
+					<span class="capitale-block"><span class="capitale">Minsk</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Ukraine.svg.png"/></span>Ukraine</span></span>
+					<span class="capitale-block"><span class="capitale">Kiev</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Moldova.svg.png"/></span>Moldavie</span></span>
+					<span class="capitale-block"><span class="capitale">Chișinău</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Romania.svg.png"/></span>Roumanie</span></span>
+					<span class="capitale-block"><span class="capitale">Bucarest</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Bulgaria.svg.png"/></span>Bulgarie</span></span>
+					<span class="capitale-block"><span class="capitale">Sofia</span></span>
+				</li>
+				<div class="mental-separator"></div>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Cyprus.svg.png"/></span>Chypre</span></span>
+					<span class="capitale-block"><span class="capitale">Nicosie</span></span>
+				</li>
 			</ul>
 		</div>
 
 		<div class="continent" dir="ltr">
 			<h2><span class="h2-content">Océanie (16)</span></h2>
 			<ul>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Australia.svg.png" /></span>Australie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Fiji.svg.png" /></span>Fidji</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Kiribati.svg.png" /></span>Kiribati</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Cook_Islands.svg.png" /></span>Îles Cook</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Marshall_Islands.svg.png" /></span>Îles Marshall</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Solomon_Islands.svg.png" /></span>Îles Salomon</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Federated_States_of_Micronesia.svg.png" /></span>Micronésie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Nauru.svg.png" /></span>Nauru</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Niue.svg.png" /></span>Niue</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_New_Zealand.svg.png" /></span>Nouvelle-Zélande</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Palau.svg.png" /></span>Palaos</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Papua_New_Guinea.svg.png" /></span>Papouasie-Nouvelle-Guinée</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Samoa.svg.png" /></span>Samoa</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Tonga.svg.png" /></span>Tonga</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Tuvalu.svg.png" /></span>Tuvalu</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Vanuatu.svg.png" /></span>Vanuatu</span></li>
-			</ul>
-		</div>
-	</div>
-
-	<div id="pays-mental" class="pays hidded" dir="rtl">
-		<div class="continent" dir="ltr">
-			<h2><span class="h2-content">Afrique (54)</span></h2>
-			<ul>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Morocco.svg.png" /></span>Maroc</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Algeria.svg.png" /></span>Algérie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Tunisia.svg.png" /></span>Tunisie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Libya.svg.png" /></span>Libye</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Egypt.svg.png" /></span>Égypte</span></li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Australia.svg.png"/></span>Australie</span></span>
+					<span class="capitale-block"><span class="capitale">Canberra</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Papua_New_Guinea.svg.png"/></span>Papouasie-Nouvelle-Guinée</span></span>
+					<span class="capitale-block"><span class="capitale">Port Moresby</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_New_Zealand.svg.png"/></span>Nouvelle-Zélande</span></span>
+					<span class="capitale-block"><span class="capitale">Wellington</span></span>
+				</li>
 				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Mauritania.svg.png" /></span>Mauritanie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Mali.svg.png" /></span>Mali</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Niger.svg.png" /></span>Niger</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Chad.svg.png" /></span>Tchad</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Sudan.svg.png" /></span>Soudan</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Eritrea.svg.png" /></span>Érythrée</span></li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Palau.svg.png"/></span>Palaos</span></span>
+					<span class="capitale-block"><span class="capitale">Ngerulmud</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Federated_States_of_Micronesia.svg.png"/></span>Micronésie</span></span>
+					<span class="capitale-block"><span class="capitale">Palikir</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Marshall_Islands.svg.png"/></span>Îles Marshall</span></span>
+					<span class="capitale-block"><span class="capitale">Majuro</span></span>
+				</li>
 				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Senegal.svg.png" /></span>Sénégal</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_The_Gambia.svg.png" /></span>Gambie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Guinea-Bissau.svg.png" /></span>Guinée-Bissau</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Guinea.svg.png" /></span>Guinée</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Sierra_Leone.svg.png" /></span>Sierra Leone</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Liberia.svg.png" /></span>Liberia</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Cote_dIvoire.svg.png" /></span>Côte d'Ivoire</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Burkina_Faso.svg.png" /></span>Burkina Faso</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Ghana.svg.png" /></span>Ghana</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Togo.svg.png" /></span>Togo</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Benin.svg.png" /></span>Bénin</span></li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Nauru.svg.png"/></span>Nauru</span></span>
+					<span class="capitale-block"><span class="capitale">Yaren</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Solomon_Islands.svg.png"/></span>Îles Salomon</span></span>
+					<span class="capitale-block"><span class="capitale">Honiara</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Vanuatu.svg.png"/></span>Vanuatu</span></span>
+					<span class="capitale-block"><span class="capitale">Port-Vila</span></span>
+				</li>
 				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Nigeria.svg.png" /></span>Nigeria</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Cameroon.svg.png" /></span>Cameroun</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Central_African_Republic.svg.png" /></span>République centrafricaine</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_South_Sudan.svg.png" /></span>Soudan du Sud</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Ethiopia.svg.png" /></span>Éthiopie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Djibouti.svg.png" /></span>Djibouti</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Somalia.svg.png" /></span>Somalie</span></li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Tuvalu.svg.png"/></span>Tuvalu</span></span>
+					<span class="capitale-block"><span class="capitale">Funafuti</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Samoa.svg.png"/></span>Samoa</span></span>
+					<span class="capitale-block"><span class="capitale">Apia</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Fiji.svg.png"/></span>Fidji</span></span>
+					<span class="capitale-block"><span class="capitale">Suva</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Tonga.svg.png"/></span>Tonga</span></span>
+					<span class="capitale-block"><span class="capitale">Nuku'alofa</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Niue.svg.png"/></span>Niue</span></span>
+					<span class="capitale-block"><span class="capitale">Alofi</span></span>
+				</li>
 				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Equatorial_Guinea.svg.png" /></span>Guinée équatoriale</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Gabon.svg.png" /></span>Gabon</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Republic_of_the_Congo.svg.png" /></span>République du Congo</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Democratic_Republic_of_the_Congo.svg.png" /></span>Rép. dém. du Congo</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Uganda.svg.png" /></span>Ouganda</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Kenya.svg.png" /></span>Kenya</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Rwanda.svg.png" /></span>Rwanda</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Burundi.svg.png" /></span>Burundi</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Tanzania.svg.png" /></span>Tanzanie</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Angola.svg.png" /></span>Angola</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Zambia.svg.png" /></span>Zambie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Malawi.svg.png" /></span>Malawi</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Mozambique.svg.png" /></span>Mozambique</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Namibia.svg.png" /></span>Namibie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Botswana.svg.png" /></span>Botswana</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Zimbabwe.svg.png" /></span>Zimbabwe</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_South_Africa.svg.png" /></span>Afrique du Sud</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Lesotho.svg.png" /></span>Lesotho</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Eswatini.svg.png" /></span>Eswatini</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Madagascar.svg.png" /></span>Madagascar</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Comoros.svg.png" /></span>Comores</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Seychelles.svg.png" /></span>Seychelles</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Mauritius.svg.png" /></span>Maurice</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Cape_Verde.svg.png" /></span>Cap-Vert</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Sao_Tome_and_Principe.svg.png" /></span>Sao Tomé-et-Principe</span></li>
-			</ul>
-		</div>
-
-		<div class="continent" dir="ltr">
-			<h2><span class="h2-content">Amérique (35)</span></h2>
-			<ul>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Canada.svg.png" /></span>Canada</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_United_States.svg.png" /></span>États-Unis</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Mexico.svg.png" /></span>Mexique</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Belize.svg.png" /></span>Belize</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Guatemala.svg.png" /></span>Guatemala</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_El_Salvador.svg.png" /></span>El Salvador</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Honduras.svg.png" /></span>Honduras</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Nicaragua.svg.png" /></span>Nicaragua</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Costa_Rica.svg.png" /></span>Costa Rica</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Panama.svg.png" /></span>Panama</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Ecuador.svg.png" /></span>Équateur</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Colombia.svg.png" /></span>Colombie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Venezuela.svg.png" /></span>Venezuela</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Guyana.svg.png" /></span>Guyana</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Suriname.svg.png" /></span>Suriname</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Peru.svg.png" /></span>Pérou</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Bolivia.svg.png" /></span>Bolivie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Brazil.svg.png" /></span>Brésil</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Chile.svg.png" /></span>Chili</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Argentina.svg.png" /></span>Argentine</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Paraguay.svg.png" /></span>Paraguay</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Uruguay.svg.png" /></span>Uruguay</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Bahamas.svg.png" /></span>Bahamas</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Cuba.svg.png" /></span>Cuba</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Jamaica.svg.png" /></span>Jamaïque</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Haiti.svg.png" /></span>Haïti</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Dominican_Republic.svg.png" /></span>République dominicaine</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Saint_Kitts_and_Nevis.svg.png" /></span>Saint-Kitts-et-Nevis</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Antigua_and_Barbuda.svg.png" /></span>Antigua-et-Barbuda</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Dominica.svg.png" /></span>Dominique</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Saint_Lucia.svg.png" /></span>Sainte-Lucie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Saint_Vincent_and_the_Grenadines.svg.png" /></span>St-Vincent-et-les-Grenadines</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Barbados.svg.png" /></span>Barbade</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Grenada.svg.png" /></span>Grenade</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Trinidad_and_Tobago.svg.png" /></span>Trinité-et-Tobago</span></li>
-			</ul>
-		</div>
-
-		<div class="continent" dir="ltr">
-			<h2><span class="h2-content">Asie (47)</span></h2>
-			<ul>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Georgia.svg.png" /></span>Géorgie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Armenia.svg.png" /></span>Arménie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Turkey.svg.png" /></span>Turquie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Syria.svg.png" /></span>Syrie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Lebanon.svg.png" /></span>Liban</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Israel.svg.png" /></span>Israël</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Palestine.svg.png" /></span>Palestine</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Jordan.svg.png" /></span>Jordanie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Iraq.svg.png" /></span>Irak</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Saudi_Arabia.svg.png" /></span>Arabie saoudite</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Kuwait.svg.png" /></span>Koweït</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Bahrain.svg.png" /></span>Bahreïn</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Qatar.svg.png" /></span>Qatar</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_United_Arab_Emirates.svg.png" /></span>Émirats arabes unis</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Oman.svg.png" /></span>Oman</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Yemen.svg.png" /></span>Yémen</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Azerbaijan.svg.png" /></span>Azerbaïdjan</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Iran.svg.png" /></span>Iran</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Turkmenistan.svg.png" /></span>Turkménistan</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Uzbekistan.svg.png" /></span>Ouzbékistan</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Kazakhstan.svg.png" /></span>Kazakhstan</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Kyrgyzstan.svg.png" /></span>Kirghizistan</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Tajikistan.svg.png" /></span>Tadjikistan</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Afghanistan.svg.png" /></span>Afghanistan</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Pakistan.svg.png" /></span>Pakistan</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Maldives.svg.png" /></span>Maldives</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Sri_Lanka.svg.png" /></span>Sri Lanka</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_India.svg.png" /></span>Inde</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_People%27s_Republic_of_China.svg.png" /></span>Chine</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Mongolia.svg.png" /></span>Mongolie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_North_Korea.svg.png" /></span>Corée du Nord</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_South_Korea.svg.png" /></span>Corée du Sud</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Japan.svg.png" /></span>Japon</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/15px-Flag_of_Nepal.svg.png" class="noviewer" /></span>Népal</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Bhutan.svg.png" /></span>Bhoutan</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Bangladesh.svg.png" /></span>Bangladesh</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Myanmar.svg.png" /></span>Birmanie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Thailand.svg.png" /></span>Thaïlande</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Laos.svg.png" /></span>Laos</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Vietnam.svg.png" /></span>Viêt Nam</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Cambodia.svg.png" /></span>Cambodge</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Malaysia.svg.png" /></span>Malaisie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Singapore.svg.png" /></span>Singapour</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Brunei.svg.png" /></span>Brunei</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Philippines.svg.png" /></span>Philippines</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Indonesia.svg.png" /></span>Indonésie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_East_Timor.svg.png" /></span>Timor-Leste</span></li>
-			</ul>
-		</div>
-
-		<div class="continent" dir="ltr">
-			<h2><span class="h2-content">Europe(45)</span></h2>
-			<ul>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Iceland.svg.png" /></span>Islande</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Ireland.svg.png" /></span>Irlande</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_United_Kingdom.svg.png" /></span>Royaume-Uni</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Norway.svg.png" /></span>Norvège</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Sweden.svg.png" /></span>Suède</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Finland.svg.png" /></span>Finlande</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Russia.svg.png" /></span>Russie</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Netherlands.svg.png" /></span>Pays-Bas</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Belgium_(civil).svg.png" /></span>Belgique</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Luxembourg.svg.png" /></span>Luxembourg</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_France.svg.png" /></span>France</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Monaco.svg.png" /></span>Monaco</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Andorra.svg.png" /></span>Andorre</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Spain.svg.png" /></span>Espagne</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Portugal.svg.png" /></span>Portugal</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Denmark.svg.png" /></span>Danemark</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Germany.svg.png" /></span>Allemagne</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/15px-Flag_of_Switzerland.svg.png" /></span>Suisse</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Liechtenstein.svg.png" /></span>Liechtenstein</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Italy.svg.png" /></span>Italie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_San_Marino.svg.png" /></span>Saint-Marin</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/18px-Flag_of_the_Vatican_City.svg.png" /></span>Vatican</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Malta.svg.png" /></span>Malte</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Czech_Republic.svg.png" /></span>Tchéquie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Austria.svg.png" /></span>Autriche</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Slovenia.svg.png" /></span>Slovénie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Croatia.svg.png" /></span>Croatie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Bosnia_and_Herzegovina.svg.png" /></span>Bosnie-Herzégovine</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Montenegro.svg.png" /></span>Monténégro</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Albania.svg.png" /></span>Albanie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Greece.svg.png" /></span>Grèce</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Poland.svg.png" /></span>Pologne</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Slovakia.svg.png" /></span>Slovaquie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Hungary.svg.png" /></span>Hongrie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Serbia.svg.png" /></span>Serbie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_North_Macedonia.svg.png" /></span>Macédoine du Nord</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Estonia.svg.png" /></span>Estonie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Latvia.svg.png" /></span>Lettonie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Lithuania.svg.png" /></span>Lituanie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Belarus.svg.png" /></span>Biélorussie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Ukraine.svg.png" /></span>Ukraine</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Moldova.svg.png" /></span>Moldavie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Romania.svg.png" /></span>Roumanie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Bulgaria.svg.png" /></span>Bulgarie</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Cyprus.svg.png" /></span>Chypre</span></li>
-			</ul>
-		</div>
-
-		<div class="continent" dir="ltr">
-			<h2><span class="h2-content">Océanie (16)</span></h2>
-			<ul>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Australia.svg.png" /></span>Australie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Papua_New_Guinea.svg.png" /></span>Papouasie-Nouvelle-Guinée</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_New_Zealand.svg.png" /></span>Nouvelle-Zélande</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Palau.svg.png" /></span>Palaos</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Federated_States_of_Micronesia.svg.png" /></span>Micronésie</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Marshall_Islands.svg.png" /></span>Îles Marshall</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Nauru.svg.png" /></span>Nauru</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Solomon_Islands.svg.png" /></span>Îles Salomon</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Vanuatu.svg.png" /></span>Vanuatu</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Tuvalu.svg.png" /></span>Tuvalu</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Samoa.svg.png" /></span>Samoa</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Fiji.svg.png" /></span>Fidji</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Tonga.svg.png" /></span>Tonga</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Niue.svg.png" /></span>Niue</span></li>
-				<div class="mental-separator"></div>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Cook_Islands.svg.png" /></span>Îles Cook</span></li>
-				<li><span class="li-content"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Kiribati.svg.png" /></span>Kiribati</span></li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_the_Cook_Islands.svg.png"/></span>Îles Cook</span></span>
+					<span class="capitale-block"><span class="capitale">Avarua</span></span>
+				</li>
+				<li>
+					<span class="pays-block"><span class="pays"><span class="flagicon"><img alt="flag" src="./flags/20px-Flag_of_Kiribati.svg.png"/></span>Kiribati</span></span>
+					<span class="capitale-block"><span class="capitale">Tarawa</span></span>
+				</li>
 			</ul>
 		</div>
 	</div>
